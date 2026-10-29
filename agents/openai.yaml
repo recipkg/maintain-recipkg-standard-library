@@ -1,0 +1,3 @@
+interface:
+  display_name: "Maintain Recipkg Standard Library"
+  short_description: "Curate and publish Recipkg standard-library recipes"
