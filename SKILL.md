@@ -1,11 +1,19 @@
 ---
 name: maintain-recipkg-standard-library
-description: "Curate the Recipkg software recipe catalog: identify category gaps, assess high-star open-source candidates, publish or update standalone recipes, and keep coverage evidence and the visual index accurate. Use when adding, upgrading, or organizing standard-library entries."
+description: "Curate and audit Recipkg software recipe catalogs: identify category gaps, assess high-star open-source candidates, publish or update standalone recipes, and verify reconstruction evidence and index status. Use when adding, upgrading, organizing, or completing a standard library."
 ---
 
 # Maintain the Recipkg standard library
 
 Use this skill when the task is to add, upgrade, or organize a recipe in the Recipkg standard library. For extracting one user-selected software project without catalog work, use `software-to-prompt`; for dependency analysis or integration, use `discover-dependencies` and `add-dependency`.
+
+## Finish an existing catalog
+
+When the user asks to complete the standard library, treat the current README table as the agreed inventory. Audit every row against its public recipe repository, fixed source and license, dependency closure, acceptance plan, and actual reconstruction evidence. Summarize counts by evidence stage before choosing the next unit of work.
+
+Prioritize closing a useful in-progress recipe over adding another entry. Add a candidate when it closes a real category or capability gap, or when the user explicitly asks for that candidate. Keep the established inventory and acceptance scope intact; do not turn a completion goal into an open-ended stream of additions.
+
+Distinguish catalog coverage from recipe completion. The catalog is complete only when every included recipe has independently reconstructed its declared scope, passed its acceptance, and has an index status that matches the evidence. A representative set of categories or successful packaging checks do not satisfy that condition. The current index defines the work scope; it does not claim to enumerate every open-source project.
 
 ## Select a useful candidate
 
