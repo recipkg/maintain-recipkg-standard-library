@@ -5,7 +5,7 @@ format = "recipkg/1"
 
 [package]
 name = "maintain-recipkg-standard-library"
-version = "0.1.1"
+version = "0.1.2"
 kind = "skill"
 description = "Curate Recipkg standard-library categories, high-star open-source candidates, standalone recipes, recursive dependencies, and catalog publication."
 entry = "SKILL.md"
