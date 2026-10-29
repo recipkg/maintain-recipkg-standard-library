@@ -29,6 +29,7 @@ Distinguish catalog coverage from recipe completion. The catalog is complete onl
 - Keep the canonical recipe in its own public Git repository with the `recipkg` topic. Recipe payloads contain UTF-8 Markdown only. Keep implementation source, binaries, scripts, screenshots, databases, secrets, and installation hooks outside the archive.
 - Include enough material to make the target and remaining gaps reviewable: `RECIPE.md`, `BUILD_PROMPT.md`, `ACCEPTANCE.md`, `SOURCES.md`, `COVERAGE.md`, and a clear `README.md`. Add a scoped `AGENTS.md` when it carries package-specific maintenance rules.
 - Make the README easy to scan. Show the product boundary and dependencies with a diagram when that clarifies the system; retain the standard-library cover and consistent links when editing the index.
+- Keep acceptance contracts reproducible from a clean temporary workspace: specify deterministic fixture generation, exact commands, and observable expected results (such as bytes, JSON fields, errors, and exit codes). Link runnable black-box tests when available, and state environment assumptions and untested boundaries. “Compare with upstream” alone is not an expected result.
 
 ## Validate and publish
 
